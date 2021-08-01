@@ -76,7 +76,7 @@ namespace BusTicketBookingApplication
             {
                 for (int i = 1; i <= NoOf_FamilyMembers; i++)
                 {
-                    TextBox txtage = (TextBox)this.Controls.Find("textboxAge" + i.ToString(), true)[0];
+                    TextBox txtage = (TextBox)this.Controls.Find("textboxAge" + (i-1).ToString(), true)[0];
                     if (txtage != null)
                     {
                         ages.Add(int.Parse(txtage.Text));
